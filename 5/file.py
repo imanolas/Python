@@ -1,17 +1,17 @@
-import math
-a1 = float(input('a1= '))
-a2 = float(input('a2= '))
-b1 = float(input('b1= '))
-b2 = float(input('b2= '))
+import statistics as st
 
-ab = a1*b1+a2*b2
+with open('inputdata.txt' , 'r') as fin:
+    content = fin.read().splitlines()
+    
+x=[]
 
-a = math.sqrt(a1**2+a2**2)
-b = math.sqrt(b1**2+b2**2)
+for inline in content:
+    x.append(float(inline))
+        
+suma= round(st.mean(x),3)
+sd=round(st.pstdev(x),3)
 
-costh = ab/(a*b)
-
-goniatheta = math.degrees(math.acos(a/b))
-
-print('costh= ', costh)
-print('goniatheta= ', goniatheta)
+with open('outputdata.txt' , 'w') as fout:
+    fout.write('Μέσος όρος= ' + str(suma) + '\n')
+    fout.write('Τυπική απόκλιση= ' + str(sd))
+    

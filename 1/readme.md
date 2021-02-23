@@ -1,13 +1,13 @@
-Περιγραφή:
-Στο χώρο δύο διαστάσεων έχουμε δύο διανύσματα a και b με αρχή το σημείο (0,0) των αξόνων και τέλος τα σημεία με καρτεσιανές συντεταγμένες a1, a2 και b1, b2 αντίστοιχα (στους άξονες x και y όπως δείχνει το σχήμα). 
+Description:
+In the two-dimensional space we have two vectors a and b starting with the point (0,0) of the axes and finally the points with Cartesian coordinates a1, a2 and b1, b2 respectively (on the x and y axes as shown in the figure).
 
 ![1](https://user-images.githubusercontent.com/73962468/103141556-94fa4800-46fe-11eb-9cef-955d401157b2.jpg)
 
-Η γωνία θ που σχηματίζουν τα δύο διανύσματα μεταξύ τους έχει συνημίτονο που δίνεται από τον τύπο:
+The angle θ formed by the two vectors with each other has a cosine given by the formula: 
 
 ![2](https://user-images.githubusercontent.com/73962468/103141592-341f3f80-46ff-11eb-9290-6a1063fc6c6e.jpg)
  
-Όπου:
+Where:
 
 ![3](https://user-images.githubusercontent.com/73962468/103141605-4d27f080-46ff-11eb-9a8c-160508ae1c27.jpg)
 
@@ -16,21 +16,21 @@
 ![5](https://user-images.githubusercontent.com/73962468/103141607-4f8a4a80-46ff-11eb-8425-f66a421ffcb9.jpg)
 
    
-Γράψτε πρόγραμμα που να διαβάζει από το πληκτρολόγιο τις τιμές των a1, a2 και b1, b2 και να υπολογίζει το συνημίτονο της γωνίας θ (ονομάστε το costh) και τη γωνία θ σε μοίρες (ονομάστε την goniath). Το πρόγραμμά σας να εμφανίζει τις τιμές των costh & goniath στην οθόνη 
+Write a program that reads from the keyboard the values of a1, a2 and b1, b2 and calculates the cosine of the angle θ (name the costh) and the angle θ in degrees (name the goniath). Your program displays costh & goniath values on the screen 
 
-ΠΡΟΣΟΧΗ στα ΟΝΟΜΑΤΑ
+ATTENTION TO THE NAMES 
 
-Χρησιμοποιείστε ΟΠΩΣΔΗΠΟΤΕ τα παρακάτω ονόματα αλλιώς ο κώδικάς σας δεν θα βαθμολογηθεί:
+DEFINITELY use the following names otherwise your password will not be rated:
 
-a1, a2 και b1, b2 για τις συντεταγμένες των διανυσμάτων a και b όπως δείχνει το σχήμα
-costh για το συνημίτονο της γωνίας θ
-goniath για τη γωνία θ
+a1, a2 and b1, b2 for the coordinates of the vectors a and b as shown in the figure
+costh for the cosine of the angle θ
+goniath for the angle θ 
 
-ΥΠΟΔΕΙΞΕΙΣ
+SUGGESTIONS
 
-Θυμηθείτε και χρησιμοποιήστε τη βιβλιοθήκη math
-Θεωρούμε πως ο χρήστης πληκτρολογεί πάντοτε αριθμητικές τιμές (ακέραιες ή πραγματικές) και δεν χρειάζεται ο κώδικάς σας να κάνει κάποιον πρόσθετο έλεγχο.
-Επίσης θεωρούμε πως ο χρήστης δίνει τιμές στα a1, a2 & b1, b2 μη μηδενικές ώστε να μην προκύψει διαίρεση με μηδέν στον παρονομαστή στον τύπο του συνημιτόνου. Επομένως δεν χρειάζεται να κάνετε κάτι γι αυτό το θέμα.
-Προσέξτε ότι το a.b ΔΕΝ σημαίνει πολλαπλασιασμό “a επί b”. Απλά είναι συμβολισμός του εσωτερικού γινομένου των διανυσμάτων. Μπορείτε εύκολα να το υπολογίσετε από τον τύπου που δίνουμε.
-Επίσης προσέξτε ότι στον παρονομαστή του τύπου για το συνημίτονο έχουμε γινόμενο των μέτρων των διανυσμάτων, δηλ. |a| επί |b|, όπου τα μέτρα θα υπολογιστούν από τους τύπους που σας δίνουμε.
-Τέλος προσέξτε ότι ζητάμε τη γωνία θ σε μοίρες (όχι ακτίνια). Προσέξτε τις πληροφορίες στη βιβλιοθήκη math.
+Remember and use the math library
+We assume that the user always enters numeric values (whole or real) and your password does not need to do any additional checking.
+We also consider that the user gives values to a1, a2 & b1, b2 non-zero so that there is no division by zero in the denominator in the cosine type. So you do not need to do anything about it.
+Note that a.b does NOT mean "a over b" multiplication. It is simply a symbol of the inner product of vectors. You can easily calculate it from the formula we give.
+Also note that in the denominator of the formula for the cosine we have the product of the measures of the vectors, i.e. | a | on | b |, where the measures will be calculated from the formulas we give you.
+Finally note that we ask for the angle θ in degrees (not radii). Look at the information in the math library. 
